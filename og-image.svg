@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142C3E"/>
+      <stop offset="50%" stop-color="#244E60"/>
+      <stop offset="100%" stop-color="#142C3E"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#244E60"/>
+      <stop offset="60%" stop-color="#25B7B8"/>
+      <stop offset="100%" stop-color="#E8FDFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="950" cy="180" r="260" fill="#25B7B8" opacity="0.12" filter="blur(60px)"/>
+  <circle cx="250" cy="450" r="220" fill="#244E60" opacity="0.18" filter="blur(50px)"/>
+  <g transform="translate(100, 180)">
+    <rect width="72" height="72" rx="16" fill="url(#accent)"/>
+    <text x="36" y="50" font-family="-apple-system, sans-serif" font-size="38" font-weight="bold" fill="#ffffff" text-anchor="middle">厚</text>
+    <text x="96" y="52" font-family="-apple-system, sans-serif" font-size="46" font-weight="800" fill="#ffffff">厚道云官网</text>
+    <text x="0" y="140" font-family="-apple-system, sans-serif" font-size="52" font-weight="bold" fill="#ffffff">2026 全球专线网络加速引擎</text>
+    <text x="0" y="210" font-family="-apple-system, sans-serif" font-size="28" fill="#B8D5E5">原生高速专线 · 4K秒开不卡顿 · ChatGPT / 流媒体全解锁</text>
+    <rect x="0" y="260" width="220" height="54" rx="10" fill="#25B7B8"/>
+    <text x="110" y="295" font-family="-apple-system, sans-serif" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">立即体验专线</text>
+  </g>
+</svg>

@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>机场节点无法连接排查步骤：DNS污染与本地网络自检手册 - 厚道云</title>
+  <meta name="description" content="节点连不上、订阅更新失败怎么办？2026最新网络加速故障排查全流程。涵盖系统时间校准、DNS污染清理、TUN模式冲突与防火墙拦截排解技巧。">
+  <meta name="keywords" content="2026年机场推荐, 节点排查, DNS污染, Clash超时, 网络自检, 故障排查">
+  <link rel="canonical" href="https://houdaoyun.sbs/article-9.html">
+  <meta property="og:title" content="机场节点无法连接排查步骤：DNS污染与本地网络自检手册">
+  <meta property="og:description" content="涵盖系统时间校准、DNS污染清理、TUN模式冲突与防火墙拦截排解技巧。">
+  <meta property="og:image" content="https://houdaoyun.sbs/og-image.png">
+    <!-- Favicon / 高清图标 -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-nav">跳转到主要内容</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand-logo" aria-label="厚道云官网首页">
+        <img src="logo.svg" alt="厚道云官方 Logo" width="160" height="38" class="brand-logo-img">
+      </a>
+      <nav class="site-nav" aria-label="全站导航">
+        <a href="/">首页</a>
+        <a href="knowledge.html">知识科普</a>
+        <a href="sitemap.html">网站地图</a>
+        <a href="https://lw.wavenetaff.com/#/?code=TcUib4w4" target="_blank" rel="nofollow sponsored noopener" class="btn-cta" style="padding: 6px 16px; min-height: 38px;">立即注册</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="article-container">
+    <nav class="breadcrumbs" aria-label="面包屑导航">
+      <a href="/">首页</a> &gt; <a href="knowledge.html">知识科普</a> &gt; <span>节点无法连接排查步骤手册</span>
+    </nav>
+
+    <header class="article-header">
+      <h1>机场节点无法连接排查步骤：DNS污染与本地网络自检手册</h1>
+      <div class="article-meta">作者：厚道云技术专栏 · 发布时间：2026年 · 关键词：网络故障自检指南</div>
+    </header>
+
+    <article class="article-content">
+      <p>在使用网络客户端时，突然遇到节点测速超时或网页打不开的情况，多数并非机房故障，而是本地设备环境或系统代理配置出现偏差。本文提供一套简单实用的排查步骤。</p>
+
+      <h2>第一步：校准本地系统时钟</h2>
+      <p>现代加密握手对系统时间极其严格。如果电脑或手机时间与标准时间误差超过60秒，握手将直接失败。解决办法：进入系统“日期和时间”设置，手动点击“立即同步”校正时钟。</p>
+
+      <h2>第二步：清理DNS缓存并排除污染</h2>
+      <p>部分宽带DNS可能会对中继域名产生污染导致解析失败。在Windows终端运行 <code>ipconfig /flushdns</code> 清空缓存，并建议将本地DNS更换为公共纯净DNS（如阿里DNS 223.5.5.5）。</p>
+
+      <h2>第三步：检查系统代理与软件冲突</h2>
+      <p>异常退出第三方软件常导致系统代理端口残留。在Windows设置中确认未勾选多余的手动代理；若开启了杀毒软件，检查是否拦截了Clash的虚拟网卡驱动。</p>
+
+      <h2>第四步：刷新订阅或联系客服</h2>
+      <p>若排查后依然无法连接，在客户端右键刷新订阅获取最新节点配置。若仍有问题，可访问 <a href="/">厚道云官网</a> 提交工单，技术运维团队会迅速协助处理。</p>
+      <p>同时建议收藏服务商的备用官方公告发布渠道，以便在遭遇国际海缆偶发事故或重大机房维护时，能够第一时间获取实时运维动态与解决方案。</p>
+
+      <h2>五、常见问题解答 (FAQ)</h2>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>为什么手机热点能连上，连Wi-Fi却全部超时？</summary>
+          <div class="faq-content">
+            这说明问题在家庭路由器设置。可能是路由器开启了安全防火墙或特定的拦截策略，尝试重启光猫路由器或调整过滤规则。
+          </div>
+        </details>
+        <details class="faq-item" open>
+          <summary>Clash提示配置错误无法启动怎么恢复？</summary>
+          <div class="faq-content">
+            删除损坏的本地配置文件，重新从后台复制订阅链接导入即可迅速解决。
+          </div>
+        </details>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="footer-links" aria-label="页脚重要页面链接">
+        <a href="sitemap.html" target="_blank">网站地图</a>
+        <a href="about.html" target="_blank">关于我们</a>
+        <a href="terms.html" target="_blank">服务条款</a>
+        <a href="privacy.html" target="_blank">隐私政策</a>
+      </nav>
+      <p class="footer-copy">© 2026 厚道云 (Houdaoyun). 保留所有权利。</p>
+    </div>
+  </footer>
+</body>
+</html>
+

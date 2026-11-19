@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026年Clash客户端配置教程：从通用订阅导入到规则分流实操 - 厚道云</title>
+  <meta name="description" content="2026最新Clash Verge及Clash Meta客户端使用指南。从机场订阅链接导入、内核选择、规则分流模式切换到延迟测试排错全流程实操教程。">
+  <meta name="keywords" content="Clash, Clash Verge, Clash配置教程, 2026年机场推荐, 规则分流, 节点订阅, 网络加速">
+  <link rel="canonical" href="https://houdaoyun.sbs/article-3.html">
+  <meta property="og:title" content="2026年Clash客户端配置教程：从通用订阅导入到规则分流实操">
+  <meta property="og:description" content="2026最新Clash客户端配置与规则分流实操指南，新手快速上手。">
+  <meta property="og:image" content="https://houdaoyun.sbs/og-image.png">
+    <!-- Favicon / 高清图标 -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-nav">跳转到主要内容</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand-logo" aria-label="厚道云官网首页">
+        <img src="logo.svg" alt="厚道云官方 Logo" width="160" height="38" class="brand-logo-img">
+      </a>
+      <nav class="site-nav" aria-label="全站导航">
+        <a href="/">首页</a>
+        <a href="knowledge.html">知识科普</a>
+        <a href="sitemap.html">网站地图</a>
+        <a href="https://lw.wavenetaff.com/#/?code=TcUib4w4" target="_blank" rel="nofollow sponsored noopener" class="btn-cta" style="padding: 6px 16px; min-height: 38px;">立即注册</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="article-container">
+    <nav class="breadcrumbs" aria-label="面包屑导航">
+      <a href="/">首页</a> &gt; <a href="knowledge.html">知识科普</a> &gt; <span>Clash客户端配置教程</span>
+    </nav>
+
+    <header class="article-header">
+      <h1>2026年Clash客户端配置教程：从通用订阅导入到规则分流实操</h1>
+      <div class="article-meta">作者：厚道云技术专栏 · 发布时间：2026年 · 关键词：Clash配置指南</div>
+    </header>
+
+    <article class="article-content">
+      <p>Clash以其轻量架构和高效的智能分流能力，一直是网络加速领域的主流工具。随着现代分支Clash Verge与Meta内核的普及，配置流程已变得极其直观。本文为您梳理核心步骤。</p>
+
+      <h2>第一步：下载客户端与导入订阅</h2>
+      <p>推荐下载支持最新协议的Clash Verge客户端。登录加速后台复制订阅URL，打开客户端“订阅”页面粘贴并点击导入。导入完成后点击选中该配置，状态灯变亮即代表加载成功。</p>
+
+      <h2>第二步：理解并使用分流模式</h2>
+      <p>Clash主要提供三种分流模式：</p>
+      <ul>
+        <li><strong>规则模式（推荐）：</strong> 访问国内网站走本地直连，不耗费代理流量；访问海外站点自动通过专线分流，兼顾速度与节省；</li>
+        <li><strong>全局模式：</strong> 所有流量强制通过所选代理节点转发，适合特殊网络调试；</li>
+        <li><strong>直连模式：</strong> 关闭代理功能，直接使用本地宽带上网。</li>
+      </ul>
+
+      <h2>第三步：节点选择与延迟检测</h2>
+      <p>切换至“代理”面板，点击测速图标，Clash 会向各节点发起真实 HTTP 握手测速并反馈延迟数值。优先挑选延迟在50ms以内的低延迟专线节点（如香港、日本节点），随后开启系统代理开关，即可畅享极速互联。</p>
+      <p>此外，对于常看 4K 流媒体或重度使用 AI 的用户，建议进入“自动选择 (Auto)”或策略组详情中，将默认落地节点固定在低负载机房，防止频繁切换 IP 触发某些平台的风控安全警报。</p>
+
+      <h2>四、常见问题解答 (FAQ)</h2>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>导入订阅后测速全部显示超时怎么排查？</summary>
+          <div class="faq-content">
+            多数由于电脑系统时钟存在较大误差导致握手失败，校准本地时间至标准北京时间即可迅速恢复。
+          </div>
+        </details>
+        <details class="faq-item" open>
+          <summary>如何在Clash中开启TUN模式接管系统全局？</summary>
+          <div class="faq-content">
+            在设置中授予管理员权限并开启“TUN模式”，即可完全接管命令行或部分不支持系统代理的软件流量。
+          </div>
+        </details>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="footer-links" aria-label="页脚重要页面链接">
+        <a href="sitemap.html" target="_blank">网站地图</a>
+        <a href="about.html" target="_blank">关于我们</a>
+        <a href="terms.html" target="_blank">服务条款</a>
+        <a href="privacy.html" target="_blank">隐私政策</a>
+      </nav>
+      <p class="footer-copy">© 2026 厚道云 (Houdaoyun). 保留所有权利。</p>
+    </div>
+  </footer>
+</body>
+</html>
+
